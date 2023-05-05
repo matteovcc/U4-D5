@@ -3,18 +3,26 @@ package application;
 public class Video extends Media {
 	private int luminosità;
 	private int volume;
+	private int durata;
 
-	public Video(String title, int luminosità,int volume) {
+	public Video(String title, int luminosità,int volume,int durata) {
 		super(title);
 		// TODO Auto-generated constructor stub
 		this.setLuminosità(luminosità);
 		this.setVolume(volume);
+		this.durata= durata;
 	}
 
 	@Override
 	public void play() {
 		// TODO Auto-generated method stub
-		
+		for(int i=0;i < durata;i++) {
+			System.out.println(title);
+			for(int j = 0;j < luminosità;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 	}
 
 	@Override

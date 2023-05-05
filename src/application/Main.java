@@ -7,6 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Audio audio1 = new Audio("audio1", 1, 3);
+		Video video1= new Video ("video1",1,2,3);
 		
 //		audio1.play();
 		
@@ -34,7 +35,9 @@ public class Main {
 			audio1.volumeDown();
 			audio1.play();
 		}else if (media == 2) {
-			//video
+			video1.play();
+			video1.aumentaLuminosità();
+			video1.play();
 		}else if (media == 3) {
 			//immagine
 		}else {
