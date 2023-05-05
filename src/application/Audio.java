@@ -15,8 +15,9 @@ public class Audio extends Media {
 	public void play() {
 		// TODO Auto-generated method stub
 		for(int i=0;i < durata;i++) {
+			System.out.println(title);
 			for(int j = 0;j < volume;j++) {
-				System.out.print("!" + title);
+				System.out.print("!");
 			}
 			System.out.println();
 		}
