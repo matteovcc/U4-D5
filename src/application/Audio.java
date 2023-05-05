@@ -1,8 +1,8 @@
 package application;
 
 public class Audio extends Media {
-	private int durata;
-	private int volume;
+	private int durata ;
+	private int volume ;
 
 	public Audio(String title,int durata,int volume) {
 		super(title);
@@ -14,7 +14,12 @@ public class Audio extends Media {
 	@Override
 	public void play() {
 		// TODO Auto-generated method stub
-		
+		for(int i=0;i < durata;i++) {
+			for(int j = 0;j < volume;j++) {
+				System.out.print("!" + title);
+			}
+			System.out.println();
+		}
 	}
 
 	@Override
